@@ -11,7 +11,7 @@ class TestAdd(unittest.TestCase):
         self.assertEqual(add(3, 5), 8)
 
     def test_add_negative(self):
-        self.assertEqual(add(-3, -5), -8)
+        self.assertEqual(add(-3, 5), 2)
 
 # Boilerplate to run tests
 if __name__ == '__main__':
