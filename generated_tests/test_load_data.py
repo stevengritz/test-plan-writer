@@ -1,1 +1,23 @@
-# Source code being tested (copied directly into the script)\ndef load_data(file_path):\n    try:\n        with open(file_path, 'r') as file:\n            data = file.read()\n        return "Data loaded successfully"\n    except FileNotFoundError:\n        return "File not found"\n\n# Standard library imports\nimport unittest\n\n# Test class using unittest\nclass TestLoadData(unittest.TestCase):\n    def test_load_data(self):\n        self.assertEqual(load_data("data.csv"), "Data loaded successfully")\n    \n    def test_load_non_existent_file(self):\n        self.assertEqual(load_data("non_existent.csv"), "File not found")\n\n# Boilerplate to run tests\nif __name__ == '__main__':\n    unittest.main()\n
+
+# Source code being tested (copied directly into the script)
+def load_data(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            return 'Data loaded successfully'
+    except FileNotFoundError:
+        return 'File not found'
+
+# Standard library imports
+import unittest
+
+# Test class using unittest
+class TestLoadData(unittest.TestCase):
+    def test_load_data(self):
+        self.assertEqual(load_data('data.csv'), 'Data loaded successfully')
+
+    def test_load_data_non_existent(self):
+        self.assertEqual(load_data('non_existent.csv'), 'File not found')
+
+# Boilerplate to run tests
+if __name__ == '__main__':
+    unittest.main()
