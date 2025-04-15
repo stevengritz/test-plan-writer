@@ -11,7 +11,7 @@ class TestReverseString(unittest.TestCase):
     def test_reverse_string(self):
         self.assertEqual(reverse_string('hello'), 'olleh')
 
-    def test_reverse_string_empty(self):
+    def test_reverse_empty_string(self):
         self.assertEqual(reverse_string(''), '')
 
 # Boilerplate to run tests
