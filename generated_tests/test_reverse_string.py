@@ -1,18 +1,1 @@
-# Source code being tested (copied directly into the script)
-def reverse_string(s):
-    return s[::-1]
-
-# Standard library imports
-import unittest
-
-# Test class using unittest
-class TestReverseString(unittest.TestCase):
-    def test_reverse_string(self):
-        self.assertEqual(reverse_string('hello'), 'olleh')
-
-    def test_reverse_string_empty(self):
-        self.assertEqual(reverse_string(''), '')
-
-# Boilerplate to run tests
-if __name__ == '__main__':
-    unittest.main()
+# Source code being tested (copied directly into the script)\ndef reverse_string(s):\n    return s[::-1]\n\n# Standard library imports\nimport unittest\n\n# Test class using unittest\nclass TestReverseString(unittest.TestCase):\n    def test_reverse_string(self):\n        self.assertEqual(reverse_string("hello"), "olleh")\n    \n    def test_reverse_empty_string(self):\n        self.assertEqual(reverse_string(""), "")\n\n# Boilerplate to run tests\nif __name__ == '__main__':\n    unittest.main()\n

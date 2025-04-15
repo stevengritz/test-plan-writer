@@ -1,18 +1,1 @@
-# Source code being tested (copied directly into the script)
-def add(a, b):
-    return a + b
-
-# Standard library imports
-import unittest
-
-# Test class using unittest
-class TestAdd(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(add(3, 5), 8)
-
-    def test_add_negative(self):
-        self.assertEqual(add(-3, 5), 2)
-
-# Boilerplate to run tests
-if __name__ == '__main__':
-    unittest.main()
+# Source code being tested (copied directly into the script)\ndef add(a, b):\n    return a + b\n\n# Standard library imports\nimport unittest\n\n# Test class using unittest\nclass TestAdd(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(add(3, 5), 8)\n    \n    def test_add_negative_numbers(self):\n        self.assertEqual(add(-3, -5), -8)\n\n# Boilerplate to run tests\nif __name__ == '__main__':\n    unittest.main()\n
