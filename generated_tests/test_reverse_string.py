@@ -1,4 +1,3 @@
-
 # Source code being tested (copied directly into the script)
 def reverse_string(s):
     return s[::-1]
